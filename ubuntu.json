@@ -112,7 +112,7 @@
         "passwd/user-password={{ user `ssh_password` }} ",
         "passwd/user-password-again={{ user `ssh_password` }} ",
         "passwd/username={{ user `ssh_username` }} ",
-        "initrd=/install/initrd.gz -- <wait><enter>" 
+        "initrd=/install/initrd.gz -- <wait><enter>"
       ],
       "disk_size": "{{ user `disk_size` }}",
       "floppy_files": [
@@ -178,8 +178,8 @@
         "script/virtualbox.sh",
         "script/parallels.sh",
         "script/motd.sh",
-        "{{user `custom_script`}}",
         "script/minimize.sh",
+        "{{user `custom_script`}}",
         "script/cleanup.sh"
       ],
       "type": "shell"
@@ -220,4 +220,3 @@
     "vmware_guest_os_type": "ubuntu-64"
   }
 }
-
